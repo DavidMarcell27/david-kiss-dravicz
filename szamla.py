@@ -1,3 +1,22 @@
+#Fájlbeolvasás(Dávid Marcell)
+
+mobil=['39','41','71']
+idok=[]
+szamok=[]
+db=0
+with open('hivasok.txt') as fbe:
+    for sor in fbe:
+        if db%2==0:
+            idok.append(sor.rstrip().split())
+        else:
+            szamok.append(sor)
+        db+=1
+print('Beolvasott adatok száma: %d\n' %(db//2))
+for i in range(0,db//2):
+    print(idok[i])
+    print(szamok[i])
+
+
 #1.Feladat(Kiss Kornél)
 print('1. feladat')
 def mobil_e(szam):
@@ -34,7 +53,7 @@ else:
 
 
 
-#5.Feladat(Dávid Marcell)
+#5.Feladat(Kiss Kornél)
 
 
 
