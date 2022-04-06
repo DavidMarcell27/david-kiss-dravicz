@@ -1,5 +1,15 @@
 #1.Feladat(Kiss Kornél)
-
+print('1. feladat')
+def mobil_e(szam):
+    igen=0
+    if szam[0:2] in mobil:
+        igen=1
+    return igen
+szam=str(input('Kérek egy telefonszámot: '))
+if mobil_e(szam)==1:
+    print('A megadott szám mobilszám!')
+else:
+    print('A megadott szám nem mobilszám!')
 
 
 
