@@ -21,7 +21,7 @@ else:
 
 
 #2.Feladat(Dravicz Levente)
-
+def percek(idoadat): 
 
 
 
