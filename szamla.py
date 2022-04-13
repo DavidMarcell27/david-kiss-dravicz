@@ -43,7 +43,17 @@ def percek(idoadat):
 #5.Feladat(Kiss Kornél)
 
 
-
+print('5. feladat')
+perc_m=0
+perc_v=0
+for i in range(0,db//2):
+    if mobil_e(szamok[i])==1:
+        perc_m+=percek(idok[i])
+    else:
+        perc_v+=percek(idok[i])
+       
+print('Mobil hívások ideje:  %d perc' %(perc_m))
+print('Vezetékes hívások ideje: %d perc\n' %(db_csk))
 
 
 
