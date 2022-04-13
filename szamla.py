@@ -21,7 +21,26 @@ else:
 
 
 #2.Feladat(Dravicz Levente)
+print("2. feladat'')
 def percek(idoadat): 
+   
+    kezdes=int(idoadat[0])*3600+int(idoadat[1])*60+int(idoadat[2])
+
+    vege=int(idoadat[3])*3600+int(idoadat[4])*60+int(idoadat[5])
+
+    perc=(vege-kezdes)//60
+
+    if (vege-kezdes)%60!=0:
+        perc+=1
+    return perc
+idoadat=[]
+szoveg=['Kezdés óra: ','Kezdés perc: ','Kezdés másodperc: ','Vége óra: ','Vége perc: ','Vége másodperc: ']
+for i in range(0,6):
+    inp=str(input(szoveg[i]))
+    idoadat.append(inp)
+print(idoadat)
+ki=percek(idoadat)
+print('A hívás ideje: %d perc\n' %(ki))
 
 
 
