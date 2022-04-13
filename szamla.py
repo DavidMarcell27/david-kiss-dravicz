@@ -27,7 +27,15 @@ def percek(idoadat):
 
 
 #3.Feladat(Dávid Marcell)
-
+str_ki=''
+with open('percek.txt','w') as fki:
+    for i in range(0,db//2):
+        str_ki+=str(percek(idok[i]))
+        str_ki+=' '
+        str_ki+=str(szamok[i])
+        fki.write(str_ki)
+        fki.write('\n')
+        str_ki=''
 
 
 
